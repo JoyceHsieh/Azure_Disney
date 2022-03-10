@@ -1,0 +1,13 @@
+flask
+joblib
+pandas
+flask_bootstrap
+werkzeug
+Pillow
+numpy
+opencv-python
+pandas
+matplotlib
+sklearn
+seaborn
+utils

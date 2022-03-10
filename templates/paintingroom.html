@@ -1,0 +1,138 @@
+
+{% block content %}
+<div>
+    <ul class="ontop">
+        <li class="top"><a href="/">Home Page</a></li>
+        <li class="top"><a href="/Character_Test">Character Test</a></li>
+        <li class="top"><a href="/image_check">Image check</a></li>
+        <li class="top"><a href="/Disney_search">Disney Search</a></li>
+        <li class="top"><a href="/paintingroom">Color Magic</a></li>
+ 
+    </ul>
+</div>
+
+<div>
+    <h1 class="bigtitle">Color Quantization</h1>
+    <p class="subtitle">Upload a photo!! <br>The magic will tansfer it to the amazing picture!!
+        <form method=post enctype=multipart/form-data>
+            <input class="file" type=file name=file>
+            <input class="upload" type=submit value=Upload>
+        </div>
+        </form>
+    </p>
+   
+
+</div>
+
+
+
+<div>
+    <ul class="below">
+        <li class="button"><a href="https://www.disney.com/" target="_blank">Disney World</a></li>
+        <li class="button">Connect us</li>
+        </ul>
+    </div>
+{% endblock %}
+
+
+
+<style>
+    *{
+    /* border: solid 1px; */
+    font-family: cursive;
+    position: relative;
+    color: rgb(0, 0, 0)}
+    html,body{
+        width:100%; height: 100%;
+        padding: 0px; margin: 0px;}
+    body
+        {
+        background-image: url("static/Backgroung/paintingroom.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        border-top: solid 20px #f24;
+        border-bottom: solid 20px #f24;
+
+        box-sizing: border-box;
+        overflow : auto;}
+    
+
+    .top{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right:10px; 
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(245, 196, 242, 0.6);
+    border-radius: 10px;
+    border-bottom: solid 6px rgb(240, 159, 233);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing:1px;}
+    
+    .top:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgba(49, 47, 49, 0.6);
+    }
+    .top:active {
+        color: rgb(255, 255, 255);
+        background-color: rgba(224, 16, 197, 0.952);
+    }
+
+    .bigtitle {
+        margin-top: 0px;
+        padding: center;
+        text-align: center;
+        font-size: 50px;
+        }
+   
+    .subtitle{
+        padding: center;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 0px;
+        }
+    .N{
+        margin-left: 300px;
+        font-size: 20px;
+    }
+
+    .file
+        {padding: center;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 0px;
+        margin-left: 450px;
+
+    }
+    .upload{
+        padding: center;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 0px;
+        margin-left: 5px;
+
+    }
+
+    .below{
+        position: fixed; bottom: 20px;
+    }
+    .button{
+        text-align: center;
+        display: inline-block;
+        /* border: solid 1px black; */
+        width: 100px;
+        height:20px;
+        border-radius:5px;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;}
+
+
+</style>
